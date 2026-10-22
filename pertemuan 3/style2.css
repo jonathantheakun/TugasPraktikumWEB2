@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    padding: 17px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+
+.datadiri {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    border: 2px solid #333333;
+    background-color: white;
+}
+header {
+    background-color: #777777;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #333333;
+}
+header h1 {
+    margin: 0;
+}
+header p {
+    margin-bottom: 0;
+}
+
+
+nav {
+    background-color: #9da69e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    border-bottom: 2px solid #333333;
+}
+.logo {
+    font-size: 22px; /*untuk menambahkan logo*/
+    font-weight: bold;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu a {
+    color: #222222;
+    text-decoration: solid;
+    font-weight: bold;
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    background-color: #9da69e;
+    border-bottom: 2px solid #333333;
+    align-items: stretch;
+}
+
+
+article {
+    background-color: #ffffff;
+    border: 2px solid #777777;
+    padding: 20px;
+    min-width: 0;
+}
+article p{
+    text-align: left;
+}
+article table tr td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+article {
+    background-color: #ffffff;
+    border: 2px solid #777777;
+    padding: 20px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+article.foto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: start;
+}
+.ft1, .ft2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+.ft3, .ft4 {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+aside {
+    background-color: #777777;
+    border: 2px solid #ddb8b8;
+    padding: 20px;
+    min-width: 0;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+th {
+    background-color: #222222;
+}
+td, th {
+    padding: 8px;
+}
+
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+footer button{
+    border-radius: 20px;
+}
+
+
+
+.absensi {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    overflow-x: auto;
+}
+.absensi h1 {
+    font-size: 25px;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin: 10px 0 20px;
+}
+.absensi table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 14px;
+}
+.absensi th,
+.absensi td {
+    border: 1px solid #333333;
+    padding: 6px 3px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.absensi th {
+    background-color: #b9cbea;
+}
