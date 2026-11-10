@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.produk-section, .keranjang-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.produk-section {
+    flex: 2;
+}
+
+.keranjang-section {
+    flex: 1;
+    height: fit-content;
+}
+
+.grid-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+
+.card-produk {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-produk h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card-produk p {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.btn-tambah {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-tambah:hover {
+    background-color: #2980b9;
+}
+
+.btn-tambah:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+
+.info-keranjang {
+    background-color: #e8f4f8;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#list-keranjang {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+#list-keranjang li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.btn-hapus-item {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.aksi-keranjang {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-bahaya, .btn-sukses {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-bahaya {
+    background-color: #d35400;
+}
+
+.btn-sukses {
+    background-color: #2ecc71;
+}
+
+.Hasil {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    white-space: pre-wrap; /* Agar enter/baris baru terbaca */
+}
